@@ -1,5 +1,5 @@
 # Application
-/public/css/*.css
+/public/assets/css/*.css
 /.sass-cache
 /_ide_helper.php
 /app/config/local
