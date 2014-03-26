@@ -36,3 +36,13 @@ $icon-font-path: '../fonts/';
 |
 */
 
+/**
+ * Static navigation bar
+ */
+body {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	.navbar {
+		margin-bottom: 20px;
+	}
+}
