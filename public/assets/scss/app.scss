@@ -1,0 +1,38 @@
+/*
+|--------------------------------------------------------------------------
+| Define Bootstrap variables
+|--------------------------------------------------------------------------
+|
+| Define Bootstrap variables before importing bootstrap/bootstrap.scss
+| All variable names can be found here:
+| http://getbootstrap.com/customize/#less-variables
+|
+*/
+
+/**
+ * Navbar (examples)
+ */
+$navbar-default-bg: #f8f8f8;
+$navbar-default-color: #777;
+
+$icon-font-path: '../fonts/';
+
+/*
+|--------------------------------------------------------------------------
+| Bootstrap v3.1.1
+|--------------------------------------------------------------------------
+|
+| Import bootstrap styles
+|
+*/
+@import "bootstrap/bootstrap";
+
+/*
+|--------------------------------------------------------------------------
+| Application Styles
+|--------------------------------------------------------------------------
+|
+| Application specific styles
+|
+*/
+
