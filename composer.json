@@ -4,7 +4,12 @@
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"require": {
-		"laravel/framework": "4.1.*"
+		"laravel/framework": "4.1.*",
+		"guzzlehttp/guzzle": "4.0.0-rc.1"
+	},
+	"require-dev": {
+		"barryvdh/laravel-ide-helper": "*",
+		"way/generators": "*"
 	},
 	"autoload": {
 		"classmap": [
@@ -14,15 +19,20 @@
 			"app/database/migrations",
 			"app/database/seeds",
 			"app/tests/TestCase.php"
-		]
+		],
+		"psr-4": {
+			"": "app/Bogardo"
+		}
 	},
 	"scripts": {
 		"post-install-cmd": [
 			"php artisan clear-compiled",
+			"php artisan ide-helper:generate",
 			"php artisan optimize"
 		],
 		"post-update-cmd": [
 			"php artisan clear-compiled",
+			"php artisan ide-helper:generate",
 			"php artisan optimize"
 		],
 		"post-create-project-cmd": [
@@ -32,5 +42,5 @@
 	"config": {
 		"preferred-install": "dist"
 	},
-	"minimum-stability": "stable"
+	"minimum-stability": "RC"
 }
