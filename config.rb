@@ -12,3 +12,7 @@ output_style = :compressed
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
 line_comments = false
+
+# Set a higher number precision, this caused issues with bootstrap scss version
+# For more info about this issue, see: https://github.com/twbs/bootstrap-sass/issues/409
+Sass::Script::Number.precision = 10
