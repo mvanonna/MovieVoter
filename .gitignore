@@ -2,6 +2,7 @@
 /public/css/*.css
 /.sass-cache
 /_ide_helper.php
+/app/config/local
 
 # IDE
 /.idea
